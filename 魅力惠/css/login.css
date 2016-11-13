@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+html,body{width:100%;height:100px;}
+.registerwrap{
+	width:100%;
+	height:837px;
+	background:url(../img/photo_03.png) repeat;
+}
+/*------------------registerHeader-------------------*/
+.registerHeader{
+	width:673px;
+	height:35px;
+	margin:0 auto;
+	padding-top:30px;
+	padding-left:277px;
+}
+.registerHeader div{
+	width:447px;
+	height:35px;
+	background:url(../img/logo.png) no-repeat center center;
+}
+.registerHeader div a{
+	display:block;
+	width:447px;
+	height:35px;
+}
+/*-------------------registerMain----------------------*/
+.registerMain{
+	width:500px;
+	height:590px;
+	background:url(../img/img_ren.png) no-repeat center -70px;
+	margin:0 auto;
+	padding:60px 0px 0px 450px;
+}
+.registerForm{
+	width:350px;
+	height:480px;	
+}
+.registerForm label{
+	display:inline-block;
+	width:80px;
+	height:30px;
+	font-size:12px;
+	text-align:right;
+	margin-right:10px;
+	line-height:30px;
+	float:left;
+
+}
+.registerInfo{
+	width:260px;
+	height:29px;
+	padding-left:90px;
+}
+.registerInfo span{
+	display:inline-block;
+	width:160px;
+	height:25px;
+	padding-top:4px;
+	font-size:16px;
+	font-weight:bold;
+	float:left;
+}
+.registerInfo b{
+	display:inline-block;
+	padding-top:5px;
+	font-size:12px;
+	float:left;
+	font-weight:100;
+}
+.registerInfo a{
+	text-decoration:underline;
+	color:#db2725;
+	font-size:14px;
+}
+.registerBonus{
+	font-size:12px;
+	padding-left:90px;
+	padding-bottom:10px;
+	color:#db2725;
+}
+.registerContent input{
+	float:left;
+	width:253px;
+	height:28px;
+	background:#F7F7F8;
+	border:1px solid #999;
+	text-indent:5px;
+	color:#999;
+}
+.registerContent .shortInput{
+	width:115px;
+	margin-right:3px;
+}
+.registerContent p{
+	font-size:12px;
+	height:25px;
+	color:#db2725;
+	margin-left:90px;
+	display:none;
+}
+.checkUsername{
+	font-size:11px;
+	color:#db2725;
+	margin-left:90px;
+	margin-top:3px;
+}
+.margin10{
+	min-height:30px;
+	height:100%;
+	margin-bottom:10px;
+}
+.margin10 div{
+	height:5px;
+	padding-top:5px;
+}
+.login_safety{
+	margin-left:90px;
+	height:100%;
+	font-size:11px;
+	display:none;
+}
+.login_safety span{
+	display:block;
+	width:84px;
+	height:15px;
+	background:#929292;
+	float:left;
+	margin-left:1px;
+	color:#fff;
+	text-align:center;
+}
+#low{
+	width:84px;
+}
+.rWholeconfirmcode span{
+	display:inline-block;
+	border:1px solid #999999;
+	height:28px;
+}
+.rwholeMessage a img{
+	width:135px;
+	height:30px;
+}
+.registerSubmit input{
+	width:260px;
+	height:35px;
+	background:#db2725;
+	line-height:35px;
+	color:#fff;
+	font-size:15px;
+	text-align:center;
+	border:0px;
+	margin-left:90px;
+}
+.registerSubmit p{
+	margin:10px 0px 10px 90px;
+	font-size:12px;
+}
+.subscription{
+	display:block;
+	margin-left:90px;
+	width:10px;
+	height:10px;
+	border:1px solid #999;
+	background:#fff;
+	float:left;
+}
+.black{
+	background:#000;
+}
+.registerSubmit div{
+	float:left;
+	font-size:12px;
+	text-indent:10px;
+}
+.registerline{
+	width:350px;
+	height:1px;
+	background:#999;
+	margin-top:50px;
+}
+.scanCode{
+	padding-left:90px;
+	padding-top:20px;
+}
+.scanCode img,.scanCode p{
+	float:left;
+}
+.scanCode p{
+	padding:20px 0px 0px 18px;
+	font-size:12px;
+}
+/*------------------------footer--------------------------*/
+.footercenter{
+	height:122px;
+	padding-top:0px;
+}
+#cfooter{
+	height:122px;
+	background:url(../img/photo_03.png) repeat-x center bottom;
+}
+.fclist{
+	height:60px;
+}
+.footercenter .copyright{
+	margin-top:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>支付宝--网上支付</title>
+		<style type="text/css">
+			*{
+				margin:0px;
+				padding:0px;
+				font-size:12px;
+				font-family:tahoma;
+				font-weight:100;
+			}
+			a{text-decoration:none;color:#000;}
+			ul,li{list-style:none;}
+			.header{
+				width:100%;
+				height:26px;
+				background:#81868B;
+			}
+			.centerheader{
+				width:1000px;
+				height:21px;
+				margin:0 auto;
+				padding-top:5px;
+			}
+			.centerheader p{
+				float:right;
+				margin-left:5px;
+				color:#fff;
+			}
+			.centerheader p a{
+				color:#fff;
+				text-indent:5px;
+			}
+			.alipayLogo{
+				width:100%;
+				height:70px;
+				border-bottom:1px solid #D7D9DA;
+			}
+			.logo{
+				width:1000px;
+				height:70px;
+				margin:0px auto;
+			}
+			.main{
+				width:100%;
+				height:700px;
+				background:#F7F7F7;
+			}
+			.main-center{
+				width:960px;
+				height:660px;
+				margin:0px auto;
+				background:#fff;
+				padding:20px;
+			}
+			.main-box{
+				width:958px;
+				height:600px;
+				border:1px solid #C8C8C8;
+				padding-top:58px;
+			}
+			.payMain{
+				width:230px;
+				height:540px;
+				margin:0px auto;
+			}
+			.payMain h3{
+				width:100%;
+				height:38px;
+				text-align:center;
+				font-size:18px;
+			}
+			.payMain a{
+				display:block;
+				width:100%;
+				height:230px;
+				margin-bottom:30px;
+			}
+			.payMain h4 a{
+				height:53px;
+				font-size:16px;
+				text-align:center;
+			}
+			.payMain h4 a:hover{
+				color:#DB2726;
+			}
+			.totalPrice{
+				text-align:center;
+			}
+			.totalPrice span{
+				margin-left:10px;
+				font-size:35px;
+				color:#FF6600;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="centerheader">
+				<p>|    <a href="">常见问题</a></p>
+				<p>你好，欢迎使用支付宝付款！</p>
+			</div>
+		</div>
+		<div class="alipayLogo">
+			<div class="logo">
+				<img src="../img/alipayLogo.png" />
+			</div>
+		</div>
+		<div class="main">
+			<div class="main-center">
+				<div class="main-box">
+					<div class="payMain">
+						<h3>扫码支付</h3>
+						<a href="#"><img src="../img/支付宝_r5_c2.png"/></a>
+						<h4><a href="paidSuccess.html">魅力惠（上海）贸易有限公司</a></h4>
+						<div class="totalPrice"><img src="../img/支付宝_RMB.png" /><span class="price"></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".price").html(getCookie("shouldpay"));
+	</script>
+</html>

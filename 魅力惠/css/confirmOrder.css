@@ -1,0 +1,1248 @@
+@charset "utf-8";
+#header {
+	height: 162px;
+}
+
+.red {
+	color: #DB2726;
+}
+
+.clearfix {
+	clear: both;
+}
+
+input {
+	outline: none;
+	text-indent: 5px;
+	border: 0;
+	vertical-align: middle;
+}
+
+* {
+	font-size: 12px;
+	font-weight: 100;
+	font-family: tahoma;
+	color: #000;
+}
+
+.confirm-main {
+	width: 1000px;
+	height: auto;
+	margin: 0px auto;
+}
+
+.confirm-main h2 {
+	width: 100%;
+	font-size: 24px;
+	height: 26px;
+	line-height: 26px;
+	color: #000;
+	border-bottom: 1px solid #000;
+	overflow: hidden;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	padding-bottom: 8px;
+}
+
+.confirm-main h3 {
+	width: 100%;
+	font-size: 14px;
+	height: auto;
+	color: #000;
+	border-bottom: 2px solid #000;
+	overflow: hidden;
+	padding-bottom: 8px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.addNewAddress {
+	width: 100%;
+	height: auto;
+	min-height:200px;
+}
+
+.newAddresss {
+	width: 100%;
+	height: auto;
+	display:none;
+}
+
+.newAddress-title {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.new_address_li {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+.new_address_title {
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.new_address_li input {
+	width: 390px;
+	height: 28px;
+	padding-left: 3px;
+	line-height: 20px;
+	border: 1px solid #999;
+	float: left;
+}
+#is_default_addr{
+	margin-right:5px;
+}
+.new_address_prompt {
+	margin-left: 10px;
+	display:none;
+}
+
+.new_address_li input {
+	width: 390px;
+	height: 28px;
+	padding-left: 3px;
+	line-height: 20px;
+	border: 1px solid #999;
+	float: left;
+}
+
+.selectcontent {
+	width: 84px;
+	height: 18px;
+	line-height: 18px;
+	border-right: 1px solid #999;
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	z-index: auto;
+}
+
+.selectionconditions {
+	width: 123px;
+	height: 28px;
+	border: 1px solid #999;
+	background-color: #fff;
+	position: relative;
+	z-index: auto;
+}
+
+.selectionconditions span {
+	display: block;
+	overflow: hidden;
+}
+
+.selectbutton {
+	width: 28px;
+	height: 28px;
+	background: url(../img/icon_arrows_bottom.gif) no-repeat;
+	background-position: 8px 10px;
+	cursor: pointer;
+	text-indent: -9999px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: auto;
+}
+
+.selectlist {
+	width: 283px;
+	height: auto;
+	overflow: hidden;
+	border: 1px solid #999;
+	box-shadow: 0 1px 6px #999;
+	background-color: #fff;
+	position: absolute;
+	top: 28px;
+	left: -1px;
+	padding-bottom: 20px;
+	z-index: 1;
+}
+.select_ul{
+	width:100%;
+	position:absolute;
+	top: 0px;
+	left:0px;
+}
+.select_ul li{
+	width: 90%;
+    height: 24px;
+    line-height: 24px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+.select_ul li:hover{
+	background:#E7E7E7;
+}
+.selectlist_top {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	padding-bottom: 5px;
+	z-index: 1;
+}
+
+.selectlist_top span {
+	display: block;
+	width: 11px;
+	height: 11px;
+	background: url(../img/icon_close2.png) no-repeat;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	z-index: 1;
+	text-indent: -9999px;
+}
+
+.selectlist_bottom {
+	width: 258px;
+	height: auto;
+	max-height: 150px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	padding: 0px;
+}
+.menu{
+	width:250px;
+	position: relative;
+	float:left;
+	height:auto;
+}
+.scrollY {
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+/*	border: 1px solid #CCC;*/
+	width: 5px;
+	cursor: pointer;
+	float:right;
+	background-color:rgba(0,0,0,.3);
+}
+.scrollbar{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:20px;
+	width:5px;
+	background:#000;
+}
+#new_address_li1 {
+	width: 400px;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 10px;
+	position: relative;
+	padding-left: 110px;
+	z-index: auto;
+}
+
+.address_button {
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	margin-bottom: 40px;
+	padding-top: 10px;
+	position: relative;
+	z-index: auto;
+}
+
+.button3,.button4 {
+	display: block;
+	width: 103px;
+	height: 33px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 33px;
+	cursor: pointer;
+	position: absolute;
+}
+.button3 {
+	color: #fff;
+	border: 1px solid #db2726;
+	background-color: #db2726;
+	left: 110px;
+	bottom: 0;
+}
+.button4 {
+	border: 1px solid #000;
+	color: #000;
+	background-color: #fff;
+	position: absolute;
+	left: 225px;
+	bottom: 0;
+}
+/*-----------选择地址 start--------------*/
+.select_address {
+    width: 100%;
+    height: auto;
+    display:none;
+}
+.select_address_li {
+    width: 305px;
+    height: 132px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.box_effect_bg {
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.select_address_li .box_effect {
+    width: 300px;
+    height: auto;
+    overflow: visible;
+    padding: 5px 0 0 5px;
+}
+.box_effect_content {
+    width: 300px;
+    padding: 0;
+    height: auto;
+    overflow: visible;
+    background-color: #fff;
+    border: 0 solid #e7e7e7;
+    position: relative;
+    bottom: 5px;
+    left: -5px;
+}
+.the_address {
+    width: 278px;
+    height: 90px;
+    padding: 10px;
+    padding-bottom: 0;
+    padding-top: 35px;
+    position: relative;
+    border: 1px solid #e7e7e7;
+}
+.the_address:hover {
+	border:1px solid #000;
+}
+.selected {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/icon_selected.png) no-repeat;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.default_address {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+.set_as_default {
+    text-decoration: underline;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+.the_address .box2 {
+    width: 230px;
+    height: auto;
+    position: absolute;
+    top: 25px;
+    right: -100px;
+    z-index: 9;
+}
+.box_top {
+    width: 100%;
+    height: 12px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.box_top .top_img {
+    width: 19px;
+    height: 12px;
+    background: url(../img/icon_arrows_top1.png) no-repeat;
+    margin: 0 auto;
+}
+.box2 .box_content {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.box_content .p1 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.box_content .p2 {
+    width: 100%;
+    height: 25px;
+    overflow: hidden;
+    position: relative;
+}
+.p2 .button7 {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 98px;
+    height: 23px;
+    border: 1px solid #db2726;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 23px;
+    cursor: pointer;
+    background-color: #db2726;
+}
+.p2 .button8 {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 98px;
+    height: 23px;
+    border: 1px solid #000;
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+    line-height: 23px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.the_address_top {
+    width: 278px;
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+    top: 0;
+}
+.the_address_top .delete {
+    display: block;
+    width: 11px;
+    height: 11px;
+    background: url(../img/icon_close2.png) no-repeat;
+    float: right;
+    text-indent: -9999px;
+    position: relative;
+    top: 12px;
+}
+.the_address_top .edit {
+    text-decoration: underline;
+    float: right;
+    padding-right: 10px;
+    cursor:pointer;
+}
+.the_address .the_address_bottom {
+    width: 278px;
+    height: auto;
+    overflow: hidden;
+}
+.the_address_bottom ul li {
+    line-height: 20px;
+}
+.select_address_button {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+.button9 {
+    display: block;
+    height: 33px;
+    border: 1px solid #db2726;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+    background-color: #db2726;
+    text-decoration: none;
+    font-weight: normal;
+    width: 103px;
+    float: left;
+}
+/*-----------选择地址 end-----------------*/
+.delivery_time {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.delivery_time span {
+	margin-right: 100px;
+}
+
+.delivery_time input {
+	margin-right: 10px;
+	margin-bottom: 2px;
+}
+
+.method_payment {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.methods_payment_p {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.methods_payment_p1{
+	margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+    display:none;
+}
+
+.methods_payment_p1 span {
+    display: block;
+    float: left;
+}
+
+.methods_payment_p1 .span1 {
+    width: 118px;
+    height: 30px;
+    overflow: hidden;
+    margin: 0 30px 0 10px;
+}
+
+.methods_payment_p1 .span1 img {
+    width: 120px;
+    height: 30px;
+    margin: -1px 0 0 -1px;
+}
+
+.methods_payment_p1 .open {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    text-decoration: underline;
+    background: url(../img/icon_arrows_right.gif) no-repeat;
+    background-position: 60px 12px;
+    cursor:pointer;
+}
+.methods_payment_p1 .open:hover{
+	color:#DB2726;
+}
+
+.methods_payment_p1 .close {
+    display: block;
+    float: left;
+    width: 42px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    text-decoration: underline;
+    background: url(../img/icon_arrows_bottom2.gif) no-repeat;
+    background-position: 32px 14px;
+    cursor:pointer;
+    display:none;
+}
+.methods_payment_p1 .close:hover{
+	color:#DB2726;
+}
+.tab1 {
+	width: 762px;
+	padding-top: 26px;
+	position: relative;
+}
+
+.tab1 .tab_nav {
+	width: 100%;
+	height: 27px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+
+.tab1 .tab_div {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	border: 1px solid #000;
+}
+
+.tab1 .tab_nav span {
+	height: 25px;
+	line-height: 25px;
+	display: block;
+	width: 98px;
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+	margin-right: -1px;
+}
+
+
+.tab_button {
+	background-color: #f2f2f2;
+	color: #999;
+	border: 1px solid #999;
+	border-bottom: 1px solid #000;
+	background: #f2f2f2;
+	position: relative;
+	height: 22px;
+	top: 1px;
+}
+
+.tab_button_checked {
+	border: 1px solid #000;
+	border-bottom: 1px solid #fff;
+	background: #fff;
+	position: relative;
+	top: 1px;
+	height: 24px;
+	z-index: 1;
+	color: #000;
+}
+
+/*--------第三方支付--------*/
+
+.third_party_payment {
+	width: 740px;
+	padding: 20px;
+	padding-right: 0;
+	padding-top: 0;
+}
+
+.third_party_payment_ul {
+	height: 30px;
+}
+
+.tab1 .top65px {
+	padding-top: 21px;
+}
+
+.border_color2 {
+	border: 1px solid #999;
+}
+
+.third_party_payment_ul li {
+	float: left;
+	width: 120px;
+	height: 30px;
+}
+
+.third_party_payment_ul li span {
+	display: block;
+	width: 118px;
+	height: 28px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.third_party_payment_ul .left30px {
+	margin-left: 30px;
+}
+
+
+/*----------快捷支付-------------*/
+
+.fast_payment {
+	width: 660px;
+	padding: 20px;
+	padding-right: 0;
+	height: auto;
+	overflow: hidden;
+	border: 1px solid #000;
+}
+
+.span1 {
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.border_color2_Checked {
+    border: 1px solid #000;
+}
+.border_color2:hover {
+	border: 1px solid #000;
+}
+.tab1 .fast_payment {
+	width: 660px;
+	padding: 20px;
+	padding-right: 0;
+}
+
+.fast_payment_ul li {
+	float: left;
+	width: 110px;
+	height: 35px;
+	margin-top: 20px;
+}
+
+.fast_payment_ul li span {
+	display: block;
+	width: 108px;
+	height: 33px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.left60px {
+	margin-left: 60px;
+}
+
+
+/*----------网银支付---------------*/
+
+.tab1 .online_bank {
+	width: 660px;
+	padding: 20px;
+	padding-right: 0;
+}
+
+.online_bank .span1 {
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	clear: both;
+}
+
+.online_bank_ul li {
+	float: left;
+	width: 110px;
+	height: 35px;
+	margin-top: 20px;
+}
+
+.online_bank_ul li span {
+	display: block;
+	width: 108px;
+	height: 33px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.online_bank .span2 {
+	display: block;
+	width: 640px;
+	height: auto;
+	overflow: hidden;
+	clear: both;
+	padding-top: 20px;
+	text-align: right;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+/*--------货到付款------------*/
+
+.tab1 .cash_delivery {
+	width: 640px;
+	padding: 20px;
+}
+
+.cash_delivery .span1 {
+	display: block;
+	width: 58px;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 50px;
+	background: url(../img/icon_cash_delivery.gif) no-repeat 8px 7px;
+	cursor: pointer;
+}
+
+.cash_delivery .p1 {
+	margin-top: 20px;
+}
+
+
+/*------------shopping cart style------------------*/
+
+.shoppingList {
+	width: 960px;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.messageShadow {
+	width: 995px;
+	padding: 0;
+	background-color: #f0f0f0;
+}
+
+.littleMessage {
+	width: 973px;
+	padding: 10px;
+	height: auto;
+	overflow: hidden;
+	background-color: #fff;
+	border: 1px solid #e7e7e7;
+	position: relative;
+	bottom: 5px;
+	left: -5px;
+}
+
+.littleMessage span,
+.littleMessage a:hover {
+	color: #DB2726;
+}
+
+.sc-checkout {
+	width: 100%;
+	height: auto;
+	padding: 60px 0 30px 0;
+	border-bottom: 1px solid #e7e7e7;
+	margin-bottom: 30px;
+}
+
+.coupon {
+	width: auto;
+	height: auto;
+	float: left;
+	overflow: hidden;
+}
+
+.orginCoupon {
+	width: 98px;
+	height: 23px;
+	border: 1px solid #000;
+	text-align: center;
+	line-height: 23px;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.showAvailiable {
+	width: 375px;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+	padding-top: 24px;
+	display: none;
+}
+
+.couponTitle {
+	width: 100%;
+	height: 25px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+
+.tabCoupon {
+	display: block;
+	width: 98px;
+	height: 23px;
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+	line-height: 23px;
+	float: left;
+	cursor: pointer;
+	margin-right: -1px;
+	border: 1px solid #999;
+	border-bottom: 1px solid #000;
+	color: #999;
+	background: #f2f2f2;
+	position: relative;
+	height: 22px;
+	top: 1px;
+}
+
+.changeBg {
+	border: 1px solid #000;
+	border-bottom: 1px solid #fff;
+	background: #fff;
+	position: relative;
+	top: 1px;
+	height: 24px;
+	z-index: 1;
+	color: #000;
+}
+
+.selectCoupon {
+	width: 335px;
+	height: auto;
+	overflow: hidden;
+	border: 1px solid #000;
+	padding: 20px;
+	padding-left: 18px;
+	/*display:none;*/
+}
+
+.tab_list {
+	width: 225px;
+	height: auto;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	position: relative;
+	line-height: 20px;
+}
+
+.tab_list_right {
+	position: absolute;
+	right: -90px;
+}
+
+.tab_list_right p {
+	text-align: right;
+	margin: 0;
+	padding: 0;
+}
+
+.tab_list input {
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	left: 0;
+	top: 7px;
+	border: 0;
+	line-height: 28px;
+	padding-left: 5px;
+}
+
+.blank {
+	padding-bottom: 10px;
+}
+
+.margin {
+	padding-left: 5px;
+}
+
+.button1 {
+	display: block;
+	float: left;
+	margin-right: 20px;
+	width: 98px;
+	height: 23px;
+	border: 1px solid #db2726;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	line-height: 23px;
+	cursor: pointer;
+	background: #db2726;
+}
+
+.button5 {
+	display: block;
+	float: left;
+	margin-right: 20px;
+	width: 98px;
+	height: 23px;
+	border: 1px solid #db2726;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	line-height: 23px;
+	cursor: pointer;
+	background: #db2726;
+}
+
+.button2 {
+	display: block;
+	float: left;
+	margin-right: 0;
+	width: 98px;
+	height: 23px;
+	border: 1px solid #000;
+	font-size: 12px;
+	color: #000;
+	text-align: center;
+	line-height: 23px;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.addCouponNum {
+	width: 335px;
+	height: auto;
+	overflow: hidden;
+	border: 1px solid #000;
+	padding: 20px;
+	padding-left: 18px;
+	display: none;
+}
+
+.addCouponNum p {
+	padding-bottom: 10px;
+}
+
+.addCouponNum input {
+	width: 253px;
+	height: 28px;
+	border: 1px solid #000;
+	line-height: 28px;
+	padding-left: 5px;
+}
+
+.afterUseCoupon {
+	display: none;
+}
+
+.afterUseCoupon p {
+	padding-bottom: 10px;
+}
+
+.couponDisabled {
+	display: none;
+}
+
+.checkmain {
+	width: 470px;
+	float: right;
+}
+
+.totalAmount {
+	width: 470px;
+	float: right;
+	text-align: right;
+	font-size: 18px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.totalAmount span {
+	color: #db2726;
+	font-size: 18px;
+}
+
+.checkoutBtn {
+	width: 470px;
+	float: right;
+	text-align: right;
+	font-size: 18px;
+	position: relative;
+}
+
+.box3 {
+	width: 350px;
+	height: auto;
+	position: absolute;
+	top: 35px;
+	right: -65px;
+	z-index: 1;
+	font-size: 12px;
+	display: none;
+}
+
+.box_top .top_img {
+	width: 19px;
+	height: 12px;
+	background: url(../img/icon_arrows_top1.png) no-repeat;
+	margin: 0 auto;
+}
+
+.box_top {
+	width: 100%;
+	height: 12px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.box_content {
+	height: auto;
+	overflow: hidden;
+	padding: 10px;
+	box-shadow: 0 0 5px #999;
+	background-color: #fff;
+	position: relative;
+}
+
+
+/*----------shopping cart head------------*/
+
+.sl-title {
+	width: 100%;
+	height: 25px;
+	overflow: hidden;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.sl-title ul {
+	width: 1000px;
+	height: 100%;
+}
+
+.headContent {
+	float: left;
+	width: 120px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	height: 25px;
+}
+
+.list_name {
+	float: left;
+	width: 475px;
+	font-size: 12px;
+	text-align: left;
+}
+
+.list_name h4 {
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.list_name strong {
+	line-height: 19px;
+}
+
+.list_name img {
+	width: 16px;
+	height: 16px;
+	margin: 0 5px 0 10px;
+	margin-top: -3px;
+	border: 0;
+	vertical-align: middle;
+}
+
+.list_content_left .list_content_img img {
+	float: left;
+	width: 80px;
+	height: 107px;
+	margin: -1px 0 0 -1px;
+}
+
+.list_content {
+	width: auto;
+	height: auto;
+	float: left;
+	padding: 10px 0 20px 20px;
+	border-bottom: 1px dotted #ccc;
+	background: #fff;
+}
+
+.list_content_ul {
+	padding-top: 10px;
+}
+
+.list_content_ul li {
+	float: left;
+	width: 120px;
+	height: 107px;
+	text-align: center;
+	line-height: 107px;
+	position: relative;
+}
+
+.list_content_ul .list_content_left {
+	width: 460px;
+	line-height: 16px;
+}
+
+.list_content_left .list_content_img {
+	width: 78px;
+	height: 105px;
+	overflow: hidden;
+	margin-right: 20px;
+	position: relative;
+}
+
+.list_content_left p {
+	float: left;
+}
+
+.list_content_name {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.list_content_left p span {
+	display: block;
+	text-align: left;
+}
+
+.list_content_left p .list_content_size {
+	margin-top: 16px;
+}
+
+.list_content_left p .list_content_State {
+	margin-top: 16px;
+	color: #db2726;
+}
+
+.list_content_ul li .number_choose {
+	margin: 0 auto;
+	/*margin-top: 38px;*/
+}
+/*----------确认订单-------------*/
+.settlement_main {
+    width: 470px;
+    height: auto;
+    padding-bottom: 100px;
+    padding-left:530px;
+}
+
+.settlement .settlement_main_right {
+    width: 470px;
+    float: right;
+    background:thistle;
+}
+
+.settlement_main_right .right_div {
+    width: 470px;
+    height: auto;
+/*    float: right;*/
+    text-align: right;
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+}
+.settlement_main_right .total_payment {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.button6 {
+    display: block;
+    width: 223px;
+    height: 33px;
+    border: 1px solid #db2726;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 33px;
+    cursor: pointer;
+    background-color: #db2726;
+	float:right;
+}
+#should_pay_amount{
+	font-size:18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

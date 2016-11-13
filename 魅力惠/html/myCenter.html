@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>【我的魅力惠】</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/myCenter.css" />
+	</head>
+
+	<body>
+		<div id="header"></div>
+		<div class="clearfix"></div>
+		<!--*************main start*********************-->
+		<div class="wrap">
+			<div class="mc-main">
+				<div class="mc-main-left">
+					<div class="mc-myfile">
+						<a href="myCenter.html">
+							<p class="user-img">
+								<img src="../img/headImg_03.png" />
+							</p>
+							<p class="user-name">15900700843</p>
+						</a>
+						<p class="amount-rest">账户余额：<span>￥ 0.00</span></p>
+					</div>
+					<dl class="left-nav">
+						<dt>我的订单</dt>
+						<dd>
+							<ul class="order-detail">
+								<li class="orderRelated"><a id="left_1" href="javascript:void(0)" class="current">所有订单</a></li>
+								<li class="orderRelated"><a id="left_2" href="javascript:void(0)">待付款</a></li>
+								<li class="orderRelated"><a id="left_3" href="javascript:void(0)">待发货</a></li>
+								<li class="orderRelated"><a id="left_4" href="javascript:void(0)">已发货</a></li>
+								<li class="orderRelated"><a id="left_5" href="javascript:void(0)">配送完成</a></li>
+								<li class="evaluateOrder"><a id="left_6" href="javascript:void(0)">购物评价</a></li>
+							</ul>
+						</dd>
+						<dt>我的收藏</dt>
+						<dd>
+							<ul class="collection-detail">
+								<li><a id="left_7" href="javascript:void(0)">所有商品</a></li>
+								<li><a id="left_8" href="javascript:void(0)">所有品牌</a></li>
+							</ul>
+						</dd>
+						<dt>我的售后</dt>
+						<dd>
+							<ul class="returnDetail">
+								<li><a id="left_9" href="javascript:void(0)">退货记录</a></li>
+							</ul>
+						</dd>
+						<dt>我的账户</dt>
+						<dd>
+							<ul class="account-detail">
+								<li><a id="left_10" href="javascript:void(0)">账户信息</a></li>
+								<li><a id="left_11" href="javascript:void(0)">收货地址</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+				<!--我的订单 start-->
+				<div class="mc-main-right">
+					<!--*******order detail start********-->
+					<div class="rightBg orderTop" style="display:block;">
+						<div class="tabNav orderNav tabNum1 tabNum5">
+							<span class="graybg">所有订单</span>
+							<span>待付款</span>
+							<span>待发货</span>
+							<span>已发货</span>
+							<span>配送完成</span>
+						</div>
+						<div class="orderList">
+							<div class="orderItem">
+								<div class="orderInfo">
+									<p class="orderNum">订单编号：2000709334</p>
+									<p class="placedAt">下单时间：2016-03-07</p>
+									<p class="remove" title="删除订单"></p>
+								</div>
+							</div>
+							<table class="data-table">
+								<tbody>
+									<tr>
+										<td class="cell-img">
+											<img src="../img/NX1-102-00430a.jpg">
+										</td>
+										<td class="cell-info">
+											<a href="JavaScript:void(0)">
+												<p class="brandName">the next</p>
+												<p class="productName">印花色貉子毛领短款驼绒服</p>
+											</a>
+											<div class="product-opts">
+												<p>颜色：印花色</p>
+												<p>尺寸：M</p>
+											</div>
+										</td>
+										<td class="cell-price a-right">
+											<p class="price willchangePrice">￥ 439.00</p>
+											<p class="qty willchangeqty">x1</p>
+										</td>
+										<td class="cell-subtotal a-center">
+											<p class="subtotal canchangeTotal">￥450.0</p>
+											<p class="shipping-fee">含运费</p>
+										</td>
+										<td class="cell-status a-center">
+											<p>订单已发货</p>
+										</td>
+										<td class="cell-actions a-right">
+											<!-- 待付款 -->
+											<a href="javascript:void(0)" class="button link-details" target="_blank">订单详情</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="clearfix"></div>
+							<div class="emptyOrderList" style="display:none;">您还没有订单，立即去<a style="color:red" href="../index.html">首页</a>选购喜欢的商品吧！</div>
+						</div>
+						<div class="orderList" style="display:none;">
+							<div class="emptyOrderList">您还没有订单，立即去<a style="color:red" href="../index.html">首页</a>选购喜欢的商品吧！</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="orderList" style="display:none;">
+							<div class="emptyOrderList">您还没有订单，立即去<a style="color:red" href="../index.html">首页</a>选购喜欢的商品吧！</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="orderList" style="display:none;">
+							<div class="emptyOrderList">您还没有订单，立即去<a style="color:red" href="../index.html">首页</a>选购喜欢的商品吧！</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="orderList" style="display:none;">
+							<div class="emptyOrderList">您还没有订单，立即去<a style="color:red" href="../index.html">首页</a>选购喜欢的商品吧！</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<!--*******order detail end********-->
+					<!--*******evaluation start**************-->
+					<div class="rightBg evalute" style="display:none;">
+						<div class="tabNum1 tabNum2">
+							<span class="graybg">未评价</span>
+							<span>已评价</span>
+						</div>
+						<div class="orderList notReviewedList">
+							<div class="withoutComment">
+								<span>您暂无未评论商品！</span>
+							</div>
+						</div>
+						<div class="orderList notReviewedList" style="display:none;">
+							<div class="withoutComment">
+								<span>您暂无未评论商品！</span>
+							</div>
+						</div>
+					</div>
+					<!--*******evaluation end**************-->
+					<!--*******collection start**************-->
+					<div class="rightBg collection" style="display:none;">
+						<div class="tabNum1 tabNum3">
+							<span class="graybg">所有商品</span>
+							<span>所有品牌</span>
+						</div>
+						<div class="myFavorite" id="myFavorite" style="display:none;">
+							<div class="favActions">
+								<div class="batch">
+									<label class="selectAll" for="selectAll" style="display:none;">
+										<input type="checkbox" name="selectAll" class="checkbox checkboxAll" id="selectAll">全选</label>
+									<a class="button deleteAll" style="display:none;">删除</a>
+								</div>
+								<div class="switcher">
+									<a class="button btn-edit">编辑</a>
+									<a class="button btn-cancel" style="display:none;">取消编辑</a>
+								</div>
+							</div>
+							<ul class="grid favGrid">
+								<li class="item">
+									<!--商品图片Start-->
+									<a class="favImage" target="_blank" title="黑色Logo拼接..." href="womenClothingProduct.html">
+										<img src="../img/NX1-113-00017a.jpg" alt="黑色Logo拼接...">
+									</a>
+									<!--商品图片End-->
+
+									<!--品牌名和商品名Start-->
+									<a class="favLink" title="黑色Logo拼接..." target="_blank" href="womenClothingProduct.html">
+										<p class="brand-name">the next</p>
+										<p class="product-name">黑色Logo拼接...</p>
+									</a>
+									<!--品牌名和商品名End-->
+									<p class="price">¥ 449</p>
+									<p class="addToCart" title="加入购物车"></p>
+
+									<div class="gridCover">
+										<div class="bg"></div>
+										<p class="check"></p>
+									</div>
+								</li>
+								<li class="item">
+									<!--商品图片Start-->
+									<a class="favImage" target="_blank" title="光电蓝貉子毛领绗..." href="womenClothingProduct.html">
+										<img src="../img/NX1-102-00529a.jpg" alt="光电蓝貉子毛领绗...">
+									</a>
+									<!--商品图片End-->
+
+									<!--品牌名和商品名Start-->
+									<a class="favLink" title="光电蓝貉子毛领绗..." target="_blank" href="womenClothingProduct.html">
+										<p class="brand-name">the next</p>
+										<p class="product-name">光电蓝貉子毛领绗...</p>
+									</a>
+									<!--品牌名和商品名Start-->
+									<p class="price">¥ 449</p>
+									<p class="addToCart" title="加入购物车"></p>
+
+									<div class="gridCover">
+										<div class="bg"></div>
+										<p class="check"></p>
+									</div>
+								</li>
+								<li class="item">
+									<!--商品图片Start-->
+									<a class="favImage" target="_blank" title="女装米色长款毛毛外套" href="womenClothingProduct.html">
+										<img src="../img/MP6-102-00059a.jpg" alt="女装米色长款毛毛外套">
+									</a>
+									<!--商品图片End-->
+
+									<!--品牌名和商品名Start-->
+									<a class="favLink" title="女装米色长款毛毛外套" target="_blank" href="womenClothingProduct.html">
+										<p class="brand-name">the next</p>
+										<p class="product-name">女装米色长款毛毛外套</p>
+									</a>
+									<!--品牌名和商品名Start-->
+									<p class="price">¥ 399</p>
+									<p class="addToCart" title="加入购物车"></p>
+
+									<div class="gridCover">
+										<div class="bg"></div>
+										<p class="check"></p>
+									</div>
+								</li>
+								<li class="item" style="display:none;">
+									<!--商品图片Start-->
+									<a class="favImage" target="_blank" title="印花色貉子毛领短..." href="womenClothingProduct.html">
+										<img src="../img/NX1-102-00430a.jpg" alt="印花色貉子毛领短...">
+									</a>
+									<!--商品图片End-->
+
+									<!--品牌名和商品名Start-->
+									<a class="favLink" title="印花色貉子毛领短..." target="_blank" href="womenClothingProduct.html">
+										<p class="brand-name">the next</p>
+										<p class="product-name">印花色貉子毛领短...</p>
+									</a>
+									<p class="price">¥ 439</p>
+									<p class="addToCart" title="加入购物车"></p>
+
+									<div class="gridCover">
+										<div class="bg"></div>
+										<p class="check"></p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="myFavorite" id="myFavoriteBrand">
+							<h3 style="font-weight:normal;text-align:center;margin-top:50px;">您还没收藏品牌，立即去<a class="red" style="color:red;text-decoration:underline;" href="../index.html">首页</a>寻找喜欢的品牌吧=^_^=！</h3>
+						</div>
+					</div>
+					<!--*******collection end**************-->
+					<!--*******return order start**************-->
+					<div class="rightBg returnOrder" style="display:none;">
+						<div class="returnNav">
+							退货记录
+						</div>
+						<div class="rma-list" style="display: block;">
+							<div class="moreService">
+								客服电话：400-664-6698
+								<a href="javascript:void(0)" target="_blank" class="online-rma button"><span>在线客服</span></a>
+							</div>
+							<div class="orderList notReviewedList">
+							</div>
+							您暂时没有退货记录
+						</div>
+					</div>
+					<!--*******return order end**************-->
+					<!--*******myfile start**************-->
+					<div class="rightBg myfile" style="display:none;">
+						<div class="tabNum1 tabNum4">
+							<span class="graybg">账户信息</span>
+							<span>收货地址</span>
+						</div>
+						<div style="display:none;" class="my_info_box person-file">
+							<div class="my_info">
+								<div class="my_base_box">
+									<form name="my_base_form" id="myBaseForm">
+										<a class="switch_modify" style="display: block;">编辑</a>
+										<div class="save_area">
+											<a id="cancelMyBase">取消</a>
+											<button type="button" id="saveMyBase" title="保存">保存</button>
+										</div>
+										<div class="my_face">
+											<div class="user-info">
+												<p class="user-avatar">
+													<img src="../img/headImg_03.png" id="avatarCurrent">
+													<i class="cover"></i>
+												</p>
+												<div id="fileDiv"></div>
+												<div class="user_avatar_mask_box" style="display: none;">
+													<div class="user_avatar_mask"></div>
+													<span>上传头像</span>
+												</div>
+											</div>
+										</div>
+										<div class="my_base">
+											<ul class="my_base_field clearfix">
+												<li>
+													<label for="nick">昵称：</label>
+													<span class="modified" id="nickCurrent" style="display: block;"></span>
+													<div class="modify" style="display: none;">
+														<input type="text" name="nick" id="nick" maxlength="10" value="" class="input_text w248">
+														<div class="error" id="nickError" style="display:none;">请填写您的昵称</div>
+													</div>
+												</li>
+												<li>
+													<label for="year">生日：</label>
+													<span class="modified" id="birthCurrent" style="display: block;"></span>
+													<div class="modify" style="display: none;">
+														<input id="seYear" class="selectionconditions1" type="text" />
+														<label>年</label>
+														<input id="seMonth" class="selectionconditions1" type="text" />
+														<label>月</label>
+														<input id="seDay" class="selectionconditions1" type="text" />
+														<!---->
+														<label>日</label>
+														<div class="error" id="dateError" style="display:none;">请填写您的生日</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</form>
+								</div>
+								<div class="safety clearfix">
+									<div class="safety_item safety_pwd">
+										<label>登录密码：</label><span class="current_status">已设置</span>
+										<div class="safety_info"></div><a href="changepwd.html" target="_blank">修改密码</a>
+									</div>
+									<div class="clearfix"></div>
+									<div class="safety_item safety_email">
+										<label>邮箱验证：</label><span class="current_status unsafety">未设置</span>
+										<div class="safety_info">为了您的账户安全，我们建议您尽快设置</div><a href="/personInfo/bindEmail?type=0" target="_blank" class="warning">绑定</a></div>
+									<div class="clearfix"></div>
+									<div class="safety_item safety_mobile">
+										<label>手机验证：</label><span class="current_status">159******43</span><a href="/personInfo/bindMobile" class="_blank" target="_blank">修改手机</a></div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="perfection">
+									<div class="percent" style="width:60%">
+										<img src="http://cdn11.mei.com/images/customer/info_percent.png" width="100%" height="20" alt="">
+										<span>资料完整度&nbsp;60%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="my_address_box person-file">
+							<div class="my_address_list clearfix">
+								<div class="my_address_item">
+									<div class="address_default"><span>默认地址</span></div>
+									<div class="my_address_info">
+										<span class="address_recivername">姓名</span>
+										<span class="address_mobile">电话</span>
+										<span class="address_city">地址</span>
+										<span class="address_address">详细地址</span>
+										<span class="address_zipcode">邮编</span>
+									</div>
+									<div class="pop_up_box box2" style="display:none;">
+										<div class="box_top">
+											<div class="top_img"></div>
+										</div>
+										<div class="box_content">
+											<p class="p1">您确定要删除该地址吗？</p>
+											<p class="p2"><span class="button10">确定</span><span class="button11">取消</span></p>
+										</div>
+									</div>
+									<div class="btn_area"><a class="modify" href="javascript:void(0)" style="display:block;">编辑</a></div>
+								</div>
+								<div class="clearfix"></div>
+								<div style="display:none;" class="my_address_form_box clearfix">
+									<form name="my_address_form" id="myAddressForm">
+										<h2>新增收货地址</h2>
+										<div class="my_address_modify">
+											<div class="field_item">
+												<label>收货人：</label>
+												<input type="text" name="recivername" id="recivername" maxlength="30" value="">
+												<span class="new_address_prompt" id="reciverValidMsg">请输入收货人</span>
+											</div>
+											<div class="field_item">
+												<label>手机号码：</label>
+												<input type="text" name="mobile" id="mobile" maxlength="11" value="">
+												<span class="new_address_prompt" id="mobileMsg">请输入手机号码</span>
+												<span class="new_address_prompt" id="mobile1Msg">手机号码有误，请重新输入</span>
+											</div>
+											<div class="field_item">
+												<label>所在地区：</label>
+												<div class="selectionconditions">
+													<span class="selectcontent" id="xialaprovince">请选择省</span>
+													<span class="selectbutton selectbutton1">下拉</span>
+													<div class="selectlist" id="provinceSelect" style="display: none">
+														<div class="selectlist_top">
+															<span id="provinceClose">关闭</span>
+														</div>
+														<div class="selectlist_bottom" id="provinceDiv" style="height: 200px;">
+															<div class="menu">
+																<ul class="select_ul">
+																	<li class="provinceLi,500">北京</li>
+																	<li class="provinceLi,501">上海</li>
+																	<li class="provinceLi,502">广东</li>
+																	<li class="provinceLi,503">江苏</li>
+																	<li class="provinceLi,504">山东</li>
+																	<li class="provinceLi,505">四川</li>
+																	<li class="provinceLi,507">浙江</li>
+																	<li class="provinceLi,508">辽宁</li>
+																	<li class="provinceLi,509">河南</li>
+																	<li class="provinceLi,510">湖北</li>
+																	<li class="provinceLi,511">福建</li>
+																	<li class="provinceLi,512">河北</li>
+																	<li class="provinceLi,513">湖南</li>
+																	<li class="provinceLi,515">黑龙江</li>
+																	<li class="provinceLi,516">天津</li>
+																	<li class="provinceLi,517">重庆</li>
+																	<li class="provinceLi,518">江西</li>
+																	<li class="provinceLi,519">山西</li>
+																	<li class="provinceLi,520">安徽</li>
+																	<li class="provinceLi,521">陕西</li>
+																	<li class="provinceLi,522">海南</li>
+																	<li class="provinceLi,523">云南</li>
+																	<li class="provinceLi,524">甘肃</li>
+																	<li class="provinceLi,525">内蒙古</li>
+																	<li class="provinceLi,526">贵州</li>
+																	<li class="provinceLi,527">新疆</li>
+																	<li class="provinceLi,528">西藏</li>
+																	<li class="provinceLi,529">青海</li>
+																	<li class="provinceLi,530">广西</li>
+																	<li class="provinceLi,532">宁夏</li>
+																	<li class="provinceLi,533">吉林</li>
+																</ul>
+															</div>
+															<div class="scrollY">
+																<div class="scrollbar" index="0"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="selectionconditions">
+													<span class="selectcontent" id="xialacity" value="">请选择市</span>
+													<span class="selectbutton selectbutton2">下拉</span>
+													<div class="selectlist" id="citySelect" style="display:none;">
+														<div class="selectlist_top">
+															<span id="cityClose">关闭</span>
+														</div>
+														<div class="selectlist_bottom" id="cityDiv" style="height: 90px;">
+															<div class="menu">
+																<ul class="select_ul">
+																	<li class="city,23">县</li>
+																	<li class="city,24">市辖区</li>
+																</ul>
+															</div>
+															<div class="scrollY">
+																<div class="scrollbar" style="height:70%;" index="1"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="selectionconditions" id="setDistrict" >
+													<span class="selectcontent" id="xialaarea" >请选择区县</span>
+													<span class="selectbutton selectbutton3">下拉</span>
+													<div class="selectlist" id="areaSelect" style="display:none;">
+														<div class="selectlist_top">
+															<span id="areaClose">关闭</span>
+														</div>
+														<div class="selectlist_bottom" id="areaDiv" style="height: 100px;">
+															<div class="menu">
+																<ul class="select_ul">
+																	<li class="area,44">南汇区</li>
+																	<li class="area,45">卢湾区</li>
+																	<li class="area,46">嘉定区</li>
+																	<li class="area,47">奉贤区</li>
+																	<li class="area,48">宝山区</li>
+																	<li class="area,49">徐汇区</li>
+																	<li class="area,50">普陀区</li>
+																	<li class="area,51">杨浦区</li>
+																	<li class="area,52">松江区</li>
+																	<li class="area,53">浦东新区</li>
+																	<li class="area,54">虹口区</li>
+																	<li class="area,55">金山区</li>
+																	<li class="area,56">长宁区</li>
+																	<li class="area,57">闵行区</li>
+																	<li class="area,58">闸北区</li>
+																	<li class="area,59">青浦区</li>
+																	<li class="area,60">静安区</li>
+																	<li class="area,61">黄浦区</li>
+																</ul>
+															</div>
+															<div class="scrollY">
+																<div class="scrollbar" index="2"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<span class="new_address_prompt" id="proctyareamsg"></span>
+											</div>
+											<div class="field_item">
+												<label>详细地址：</label>
+												<input type="text" name="ditailaddress" id="ditailaddress" maxlength="45" value="">
+												<span class="new_address_prompt" id="ditailValidMsg">请输入地址</span>
+												<!--<span class="new_address_prompt" id="ditailValid1Msg">请选择所在地</span>-->
+											</div>
+											<div class="field_item">
+												<label>邮政编码：</label>
+												<input type="text" name="postalcode" id="postalcode" maxlength="6" value="">
+												<span class="new_address_prompt" id="postalMsg">错误的邮编可能导致派送延迟或无法送达,可谨慎填写</span>
+												<span class="new_address_prompt" id="postal1Msg">请输入您的邮政编码</span>
+											</div>
+											<div class="set_form_save_area">
+												<button type="button" title="新增地址" id="saveBtn">新增地址</button>
+											</div>
+										</div>
+									</form>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--*******myfile end**************-->
+				</div>
+				<!--我的订单 end-->
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!--*************main end***********************-->
+		<div class="clearfix"></div>
+		<div id="footer"></div>
+	</body>
+	<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/myAccountCommon.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/myCenter.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

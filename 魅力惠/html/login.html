@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录页面</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+		<style type="text/css">
+			input{
+				outline:none;
+				text-indent:10px;
+			}
+			body,html{
+				width:100%;
+				height:100%;
+				background:transparent;
+			}
+			.registerSubmit div {
+				margin-top: 10px;
+				color: #000;
+			}			
+			.registerSubmit div span {
+				background: #000;
+			}
+			.rWholeLoginPort a{
+				display:inline-block;				
+				height:17px;
+				margin-top:5px;
+				margin-right:20px;
+			}
+			.rUsername{
+				display:none;
+			}
+			.weibo{	
+				width:20px;			
+				background:url(../img/icon_weibo.png) no-repeat center center;
+			}
+			.weibo:hover{
+				background:url(../img/icon_weibo_03.png) no-repeat center center;
+			}
+			.aliPay{
+				width:44px;
+				background:url(../img/icon_zhifubao.png) no-repeat center center;
+			}
+			.aliPay:hover{
+				background:url(../img/icon_zhifubao_03.png) no-repeat center center;
+			}
+			.registerSubmit b{
+				font-weight:100;
+				display: inline-block;
+				width:190px;
+				margin-left:-14px;
+			}
+			.rWholeLoginPort{
+				height:30px;
+			}
+			.forgetPwd{
+				color:#000;
+				text-decoration: underline;
+			}
+			.forgetPwd:hover{
+				color:#DB2726;
+			}
+			.registerContent p{
+				height:40px;
+			}
+			.registerSubmit .white{
+				background:#fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="registerwrap">
+			<div class="registerHeader">
+				<div><a href="../index.html"></a></div>
+			</div>
+			<div class="registerMain">
+				<div class="registerForm">
+					<div class="registerInfo">
+						<span style="width:135px">会员登录</span>
+						<b>没有帐号？</b>
+						<a href="register.html">免费注册</a>
+					</div>
+					<div class="registerContent">
+						<div class="rWholeUsername margin10">
+							<label>帐户名：</label>
+							<input type="text" class="rUsernameTxt" value="已验证手机号/邮箱" />
+							<input type="text" class="rUsername" value="" />
+							<p id="usernameIsEmpty" class="hidstyle">请输入已验证的手机号或邮箱</p>
+							<p id="usernameIsError">请输入正确的手机号或邮箱</p>
+							
+						</div>
+						<div class="rWholePassword margin10">
+							<label>密码：</label>
+							<input type="password" name="rPwd" class="rPwd" />
+							<p id="Pwd_error">请输入密码</p>
+							<p id="wrongUserOrPwd">账户名或密码错误</p>
+							<div class="clearfix" style="height:0px"></div>
+						</div>
+						<div class="rWholeconfirmcode margin10">
+							<label>验证码：</label>
+							<input type="text" class="confirmcode shortInput" value="" />
+							<span>
+								<img src="../img/verifycode3.png"  /> 
+							</span>
+							<p id="CCode_empty">请输入验证码</p>
+							<p id="CCode_error">请输入正确的验证码</p>
+						</div>
+					</div>
+					<div class="registerSubmit">
+						<input type="submit" class="rSubmit" name="" value="会员登录" />
+						<div>
+							<span class="subscription autoLogin"></span> 
+							<b>下次自动登录</b>
+							<a class="forgetPwd" href="#">忘记密码</a>
+						</div>
+					</div>
+					<div class="rWholeLoginPort margin10">
+						<label>联名登陆：</label>
+						<a class="weibo" href="#"></a> 
+						<a class="aliPay" href="#"></a>
+					</div>
+					<div class="registerline"></div>
+					<div class="scanCode">
+						<img src="../img/imges_saomiao.jpg" />
+						<p>扫描二维码或发送短信
+							<br>“MLH”到“12114”
+							<br>下载APP尊享独家优惠</p>
+					</div>
+				</div>
+			</div>
+			<div id="cfooter">
+				<div class="footercenter">
+					<ul class="fclist">
+						<li><a class="fl1" href="#">100%品牌授权正品</a></li>
+						<li><a class="fl2" href="#">满688免运费</a></li>
+						<li><a class="fl3" href="#">7天无条件退货</a></li>
+						<li><a class="fl4" href="#">超值折扣</a></li>
+						<li><a class="fl5" href="#">9点限时闪购</a></li>
+						<li class="fclast"><a class="fl6" href="#">400－664－6698</a></li>
+					</ul>
+					<p class="copyright">
+						<span>COPYRIGHT©2015  魅力惠（上海）贸易有限公司版权所有</span>沪ICP备10004993号
+					</p>
+				</div>
+			</div>
+		</div>			
+	</body>
+	<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/header.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>魅力惠--确认订单</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/confirmOrder.css" />
+	</head>
+
+	<body>
+		<div id="header"></div>
+		<div class="clearfix"></div>
+		<!--************main part start*******************-->
+		<div class="confirm-main">
+			<h2>确认订单信息</h2>
+			<h3>收货地址</h3>
+			<div class="addNewAddress">
+				<div class="newAddresss">
+					<ul>
+						<li class="newAddress-title">使用新地址</li>
+						<li class="new_address_li">
+							<span class="new_address_title">收货人：</span>
+							<input id="receiver" name="receiver" type="text" maxlength="30" />
+							<span id="ndprompt" class="new_address_prompt red">请输入收货人姓名</span>
+						</li>
+						<li class="new_address_li">
+							<span class="new_address_title">手机号码：</span>
+							<input id="mobile" name="mobile" type="text" maxlength="11" />
+							<span id="ndmobile" class="new_address_prompt red">请输入手机号</span>
+							<span id="wdmobile" class="new_address_prompt red">请输入正确的手机号</span>
+						</li>
+						<li class="new_address_li">
+							<span class="new_address_title">所在地区：</span>
+							<div class="selectionconditions" style="float: left;margin-right: 10px;">
+								<span class="selectcontent" id="provinceText">请选择省</span>
+								<span class="selectbutton" id="provinceBtn">下拉</span>
+								<div class="selectlist" id="provinceSelect" style="display: none">
+									<div class="selectlist_top">
+										<span id="provinceClose">关闭</span>
+									</div>
+									<div class="selectlist_bottom" id="provinceDiv" style="height: 200px;">
+										<div class="menu">
+											<ul class="select_ul">
+												<li class="provinceLi,500">北京</li>
+												<li class="provinceLi,501">上海</li>
+												<li class="provinceLi,502">广东</li>
+												<li class="provinceLi,503">江苏</li>
+												<li class="provinceLi,504">山东</li>
+												<li class="provinceLi,505">四川</li>
+												<li class="provinceLi,507">浙江</li>
+												<li class="provinceLi,508">辽宁</li>
+												<li class="provinceLi,509">河南</li>
+												<li class="provinceLi,510">湖北</li>
+												<li class="provinceLi,511">福建</li>
+												<li class="provinceLi,512">河北</li>
+												<li class="provinceLi,513">湖南</li>
+												<li class="provinceLi,515">黑龙江</li>
+												<li class="provinceLi,516">天津</li>
+												<li class="provinceLi,517">重庆</li>
+												<li class="provinceLi,518">江西</li>
+												<li class="provinceLi,519">山西</li>
+												<li class="provinceLi,520">安徽</li>
+												<li class="provinceLi,521">陕西</li>
+												<li class="provinceLi,522">海南</li>
+												<li class="provinceLi,523">云南</li>
+												<li class="provinceLi,524">甘肃</li>
+												<li class="provinceLi,525">内蒙古</li>
+												<li class="provinceLi,526">贵州</li>
+												<li class="provinceLi,527">新疆</li>
+												<li class="provinceLi,528">西藏</li>
+												<li class="provinceLi,529">青海</li>
+												<li class="provinceLi,530">广西</li>
+												<li class="provinceLi,532">宁夏</li>
+												<li class="provinceLi,533">吉林</li>
+											</ul>
+										</div>
+										<div class="scrollY">
+											<div class="scrollbar" index="0"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="selectionconditions" style="float: left;margin-right: 10px;">
+								<span class="selectcontent" id="cityText">请选择市</span>
+								<span class="selectbutton" id="cityBtn">下拉</span>
+								<div class="selectlist" id="citySelect" style="display:none;">
+									<div class="selectlist_top">
+										<span id="cityClose">关闭</span>
+									</div>
+									<div class="selectlist_bottom" id="cityDiv" style="height: 90px;">
+										<div class="menu">
+											<ul class="select_ul">
+												<li class="city,23">县</li>
+												<li class="city,24">市辖区</li>
+											</ul>
+										</div>
+										<div class="scrollY">
+											<div class="scrollbar" style="height:70%;" index="1"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="selectionconditions" style="float: left;margin-right: 0px;">
+								<span class="selectcontent" id="areaText">请选择区县</span>
+								<span class="selectbutton" id="areaBtn">下拉</span>
+								<div class="selectlist" id="areaSelect" style="display:none;">
+									<div class="selectlist_top">
+										<span id="areaClose">关闭</span>
+									</div>
+									<div class="selectlist_bottom" id="areaDiv" style="height: 100px;">
+										<div class="menu">
+											<ul class="select_ul">
+												<li class="area,44">南汇区</li>
+												<li class="area,45">卢湾区</li>
+												<li class="area,46">嘉定区</li>
+												<li class="area,47">奉贤区</li>
+												<li class="area,48">宝山区</li>
+												<li class="area,49">徐汇区</li>
+												<li class="area,50">普陀区</li>
+												<li class="area,51">杨浦区</li>
+												<li class="area,52">松江区</li>
+												<li class="area,53">浦东新区</li>
+												<li class="area,54">虹口区</li>
+												<li class="area,55">金山区</li>
+												<li class="area,56">长宁区</li>
+												<li class="area,57">闵行区</li>
+												<li class="area,58">闸北区</li>
+												<li class="area,59">青浦区</li>
+												<li class="area,60">静安区</li>
+												<li class="area,61">黄浦区</li>
+											</ul>
+										</div>
+										<div class="scrollY">
+											<div class="scrollbar" index="2"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<span id="nataddresstitle" class="new_address_prompt red">请选择所在地区</span>
+						</li>
+						<li class="new_address_li">
+							<span class="new_address_title">详细地址：</span>
+							<input id="ditailaddr" name="ditailaddr" type="text" maxlength="25" />
+							<span id="ndditailaddr" class="new_address_prompt red">请输入详细地址</span>
+						</li>
+						<li class="new_address_li"><span class="new_address_title">邮政编码：</span>
+							<input id="postal_code" name="postal_code" type="text" maxlength="6" />
+							<span id="ndpostal_code" class="new_address_prompt" style="display:inline-block;">错误的邮编可能导致派送延迟或无法送达，请谨慎填写</span>
+							<span id="edpostal_code" class="new_address_prompt red">请输入邮政编码</span>
+						</li>
+						<li class="new_address_li1" id="new_address_li1" style="display: none;">
+							<input type="checkbox" id="is_default_addr" name="is_default_addr" style="display:none;" />设为默认地址
+						</li>
+						<li class="address_button">
+							<span class="button3" id="button3">送到该地址</span>
+							<span class="button4" id="button4" style="display: none;">取消</span>
+						</li>
+					</ul>
+				</div>
+				<!--选择地址 start-->
+				<div class="select_address" id="select_address">
+					<ul>
+						<li class="select_address_li box_effect_bg">
+							<div class="box_effect">
+								<ul>
+									<li>
+										<div class="box_effect_content">
+											<div class="the_address" id="mr2027202799000000841">
+												<div class="toggle_clickbox selected" id="clickbox2027202799000000841">复选框</div>
+												<span class="default_address" style="display: block;">默认地址</span>
+												<a class="set_as_default" style="display:none;">设为默认地址</a>
+												<div class="pop_up_box box2" id="deleteAdd" style="display:none;">
+													<div class="box_top">
+														<div class="top_img"></div>
+													</div>
+													<div class="box_content">
+														<p class="p1">您确定要删除该地址吗？</p>
+														<p class="p2">
+															<span class="button7">确定</span>
+															<span class="button8">取消</span>
+														</p>
+													</div>
+												</div>
+												<div class="the_address_top">
+													<a class="delete">删除</a>
+													<a class="edit">编辑</a>
+												</div>
+												<div class="the_address_bottom">
+													<ul>
+														<input type="hidden" id="pdaddrid" value="2027202799000000841">
+														<li style="display: block; width: 270px;  overflow:  hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:  ellipsis;"></li>
+														<li></li>
+														<li></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="clearfix"></div>
+					<div class="select_address_button" id="useNew">
+						<span class="button9">使用新地址</span>
+					</div>
+				</div>
+				<!--选择地址 end-->
+			</div>
+			<h3>配送时间</h3>
+			<div class="delivery_time">
+				<span>
+					<input name="delivery_time" type="radio" checked="">不限
+				</span>
+				<span>
+					<input name="delivery_time" type="radio">只有工作日
+				</span>
+				<span>
+					<input name="delivery_time" type="radio">只有双休日/节假日
+				</span>
+			</div>
+			<h3>支付方式</h3>
+			<div class="method_payment">
+				<p class="methods_payment_p1" id="methods_payment_p1">
+					<span id="pay_fs">使用支付方式：第三方支付</span>
+					<span class="span1 border_color2_Checked"><img id="pay_img" src=""></span>
+					<a class="open" id="onlineopen">选择其它</a>
+					<a class="close" id="onlineclose">收缩</a>
+				</p>
+				<p class="methods_payment_p" id="methods_payment">请选择适合您的支付方式：</p>
+				<div class="tab1">
+					<div class="tab_nav">
+						<span class="tab_button tab_button_checked">第三方支付</span>
+						<span class="tab_button">快捷支付</span>
+						<span class="tab_button">网上银行支付</span>
+						<span class="tab_button">货到付款</span>
+					</div>
+					<!--第三方支付方式 start-->
+					<div class="tab_div  third_party_payment" style="display: block;">
+						<!-- 第一行 -->
+						<ul class="third_party_payment_ul top65px">
+							<li>
+								<span class=" border_color2" name="../img/zhifubao.gif">
+								<img src="../img/zhifubao.gif">
+								</span>
+							</li>
+							<li class="left30px">
+								<span class=" border_color2" name="../img/zhifubaosaoma.gif">
+									<img src="../img/zhifubaosaoma.gif">
+								</span>
+							</li>
+							<li class="left30px">
+								<span class=" border_color2" name="../img/kuaiqian.gif">
+									<img src="../img/kuaiqian.gif">
+								</span>
+							</li>
+							<li class="left30px">
+								<span class=" border_color2" name="../img/zhaoshangchaojiwangyin.gif">
+									<img src="../img/zhaoshangchaojiwangyin.gif">
+								</span>
+							</li>
+						</ul>
+						<!-- 第一行 -->
+					</div>
+					<!--第三方支付方式 end-->
+					<!--快捷支付 start-->
+					<div class="tab_div  fast_payment" style="display: none;" id="2014000100000000002">
+						<span class="span1">支持信用卡付款，无需开通网银支付功能</span>
+						<ul class="fast_payment_ul">
+							<li>
+								<span class="border_color2" name="../img/zhaoshang.gif"><img src="../img/zhaoshang.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/jianshe.gif"><img src="../img/jianshe.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/gongshang.gif"><img src="../img/gongshang.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/nongye.gif"><img src="../img/nongye.gif"></span>
+							</li>
+							<li>
+								<span class="border_color2" name="../img/zhongguo.gif"><img src="../img/zhongguo.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/minsheng.gif"><img src="../img/minsheng.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/guangda.gif"><img src="../img/guangda.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/pingan.gif"><img src="../img/pingan.gif"></span>
+							</li>
+						</ul>
+					</div>
+					<!--快捷支付 end-->
+					<!--网上银行支付 start-->
+					<div class="tab_div  online_bank" style="display: none;" id="2014000100000000003">
+						<span class="span1">需开通网银支付功能</span>
+						<ul class="online_bank_ul">
+							<li>
+								<span class="border_color2" name="../img/gongshang.gif"><img src="../img/gongshang.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/zhaoshang.gif"><img src="../img/zhaoshang.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/jianshe.gif"><img src="../img/jianshe.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/nongye.gif"><img src="../img/nongye.gif"></span>
+							</li>
+							<li>
+								<span class="border_color2" name="../img/zhongguo.gif"><img src="../img/zhongguo.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/jiaotong.gif"><img src="../img/jiaotong.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/minsheng.gif"><img src="../img/minsheng.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/pufa.gif"><img src="../img/pufa.gif"></span>
+							</li>
+						</ul>
+						<!--展开更多-->
+						<span class="span2" id="spanMoreBank" style="display: block;">展开更多</span>
+						<ul class="online_bank_ul" id="moreBank" style="display: none;">
+							<li>
+								<span class="border_color2" name="../img/youzheng.gif"><img src="../img/youzheng.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/shanghai.gif"><img src="../img/shanghai.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/beijing.gif"><img src="../img/beijing.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2_Checked" name="../img/pingan.gif"><img src="../img/pingan.gif"></span>
+							</li>
+							<li>
+								<span class="border_color2" name="../img/xingye.gif"><img src="../img/xingye.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/guangfa.gif"><img src="../img/guangfa.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/ningbo.gif"><img src="../img/ningbo.gif"></span>
+							</li>
+							<li class="left60px">
+								<span class="border_color2" name="../img/hangzhou.gif"><img src="../img/hangzhou.gif"></span>
+							</li>
+							<li>
+								<span class="border_color2" name="../img/shanghainongshang.gif"><img src="../img/shanghainongshang.gif"></span>
+							</li>
+						</ul>
+						<!--展开更多 end-->
+					</div>
+					<!--网上银行支付 end-->
+					<!--货到付款 start-->
+					<div class="tab_div  cash_delivery" style="display:none;" id="CASH">
+						<span class="span1 border_color2" id="COD" name="COD_span1" style="">货到付款</span>
+						<p class="p1 red" id="cod_p2" style="display:block;">非常抱歉，您订单中包含的海外直发或品牌直发商品不支持货到付款，给您造成不便，对此我们表示由衷的歉意。</p>
+						<p class="p1 red" style="display: none;" id="cod_p1">非常抱歉，您输入的送货地址不属于顺丰速运代收货到付款区域，给您造成的不便敬请谅解！请再次确认您的邮编是否正确！</p>
+						<p class="p1 red" style="display:none;" id="cod_p3">非常抱歉，您订单中包含不支持货到付款的商品，请您选择在线支付。</p>
+						<p class="p1 red" style="display:none;" id="cod_p4">温馨提示：活动期间，货到付款需要支付运费，建议您选择“在线支付”尊享免运费。</p>
+					</div>
+					<!--货到付款 end-->
+				</div>
+			</div>
+			<h3>购物清单</h3>
+			<!--需要支付的商品   start-->
+			<div class="shoppingList">
+				<div class="sl-title">
+					<ul>
+						<li class="list_name">
+							<h4>商品信息</h4>
+							<strong><img src="../img/icon_countdown.gif">预计出库日期：
+				    		<span>2016年3月4日</span>
+							</strong>
+						</li>
+						<li class="headContent">单价</li>
+						<li class="headContent">数量</li>
+						<li class="headContent">优惠</li>
+						<li class="headContent">小计</li>
+					</ul>
+				</div>
+				<div class="list_content">
+					<ul class="list_content_ul">
+						<li class="list_content_left">
+							<p class="list_content_img border_color1">
+								<a target="_blank" href="womenClothingProduct.html"><img src="../img/NX1-102-00430a.jpg" title="印花色貉子毛领短款驼绒服" alt="印花色貉子毛领短款驼绒服"></a>
+							</p>
+							<p>
+								<span class="list_content_name" title="the next">
+				            		<a target="_blank" href="womenClothingProduct.html" class="sublong" style="width: 250px;">the next</a>
+				            	</span>
+								<span class="list_content_title" title="印花色貉子毛领短款驼绒服">
+				            		<a target="_blank" href="womenClothingProduct.html" class="sublong" style="width: 250px;">印花色貉子毛领短款驼绒服</a>
+				            	</span>
+								<span class="list_content_size">尺寸：M</span>
+								<span class="list_content_State"></span>
+							</p>
+						</li>
+						<li>¥ 439.00</li>
+						<li>
+							<div class="number_choose">
+								<span class="quantity_number">1</span>
+							</div>
+						</li>
+						<li></li>
+						<li>¥ 439.00</li>
+						<div class="clearfix"></div>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<!--需要支付的商品   end-->
+			<!--确认订单   start-->
+			<div class="settlement_main">
+				<!--<div class="empty2"></div>-->
+				<div class="settlement_main_right" style="margin-top: 60px">
+					<div class="right_div">商品小计：￥439.00</div>
+					<div class="right_div">+运费：￥<span id="freight_amt">11.00</span></div>
+					<div class="right_div total_payment">=应付：<span class="red" id="should_pay_amount">￥450.00</span></div>
+					<div class="right_div">
+						<p class="red submitOrderWarn" style="display:none;">请完善您的订单信息</p>
+						<span class="button6">提交订单</span>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<!--确认订单   end-->
+		</div>
+		<!--************main part end*******************-->
+		<div class="clearfix"></div>
+		<div id="footer"></div>
+	</body>
+	<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/myAccountCommon.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/orderConfirm.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

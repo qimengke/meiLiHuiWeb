@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+		<style type="text/css">
+			.registerSubmit p a{
+				color:#000;
+				text-decoration: underline;
+			}
+			.registerSubmit p a:hover{
+				color:#DB2726;
+			}
+			input{
+				outline:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="registerwrap">
+			<div class="registerHeader">
+				<div><a href="../index.html"></a></div>
+			</div>
+			<div class="registerMain">
+				<div class="registerForm">
+					<div class="registerInfo">
+						<span>免费注册</span>
+						<b>已注册？</b>
+						<a href="login.html">登录</a>
+					</div>
+					<div class="registerBonus">
+						新客专享&nbsp;50元现金券+2次免运
+					</div>
+					<div class="registerContent">
+						<div class="rWholeUsername margin10">
+							<label>帐户名：</label>
+							<input type="text" class="rUsernameTxt" value="手机号/邮箱" />
+							<input type="text" class="rUsername" value="" style="display:none;"/>
+							<!--<br />-->
+							<div id="EmailIsHad" class="hidstyle">
+					        	<p>该邮箱已存在，请更换其他手机号/邮箱或尝试<a href="#">登录</a></p>
+					        </div>
+					        <div id="TelIsHad" class="hidstyle">
+					        	<p>该手机号已存在，请更换其他手机号/邮箱或尝试<a href="#">登录</a></p>
+					        </div>
+					        <p id="username_empty">请输入手机号或邮箱</p>
+					        <p id="hasThisUser">该手机号已注册</p>
+						</div>
+						<div class="rWholePassword margin10">
+							<label>密码：</label>
+							<input type="password" name="rPwd" class="rPwd" id="rPwd" maxlength="20" style="display:none;"/>
+							<input type="text" class="rPwdTxt" value="请输入6-20个字符"/>
+							<div class="clearfix"></div>
+							<p id="Pwd_error" >请输入密码</p>
+							<p id="Pwd_less" >密码长度不能少于6位</p>
+					    	<p id="lowPwd" style="margin-left:80px;">密码较弱，建议设置多种字符组成的复杂密码</p>
+					        <div class="clearfix"></div>
+					        <div class="login_safety hidstyle" id="lowMHight">
+					            <span id="low">低</span>
+					            <span id="middle">中</span>
+					            <span id="height">高</span>
+					        </div>
+						</div>
+						<div class="rWholeConPassword margin10">
+							<label>确认密码：</label>
+							<input type="password" name="rPwd" class="rConfirmPwd" />
+							<p id="RPwd_error">密码和确认密码不一致，请重新输入</p>
+							<p id="rewritePwd">请重复输入您的密码</p>
+						</div>
+						<div class="rWholeconfirmcode margin10">
+							<label>验证码：</label>
+							<input type="text" class="confirmcode shortInput" value="" />
+							<span class="verifycode">
+								<img src="../img/verifycode3.png"  /> 
+							</span>
+							<p id="CCode_empty">请输入验证码</p>
+							<p id="CCode_error">请输入正确的验证码</p>
+						</div>
+						<div class="rwholeMessage margin10">
+							<label>短信验证码：</label>
+							<input class="shortInput" type="text" class="message"/>
+							<a class="messageGet" href="javascript:void(0)">
+								<img src="../img/verifycode.png" />
+							</a>
+							<a class="messageGetAgain" href="javascript:void(0)" style="display:none">
+								<img src="../img/verifycode2.png" />
+							</a>
+						</div>
+					</div>
+					<div class="registerSubmit">
+						<input type="submit" class="rSubmit" name="" value="立即注册" />
+						<p>点击立即注册即表示同意魅力惠<a href="#">使用条款</a></p>
+						<div>
+							<span class="subscription"></span>
+							您将会收到魅力惠每日最新上线邮件
+						</div>
+					</div>
+					<div class="registerline"></div>
+					<div class="scanCode">
+						<img src="../img/imges_saomiao.jpg" />
+						<p>扫描二维码或发送短信<br>“MLH”到“12114”<br>下载APP尊享独家优惠</p>
+					</div>
+				</div>
+			</div>
+			<div id="cfooter">
+				<div class="footercenter">
+					<ul class="fclist">
+						<li><a class="fl1" href="#">100%品牌授权正品</a></li>
+						<li><a class="fl2" href="#">满688免运费</a></li>
+						<li><a class="fl3" href="#">7天无条件退货</a></li>
+						<li><a class="fl4" href="#">超值折扣</a></li>
+						<li><a class="fl5" href="#">9点限时闪购</a></li>
+						<li class="fclast"><a class="fl6" href="#">400－664－6698</a></li>
+					</ul>
+					<p class="copyright">
+						<span>COPYRIGHT©2015  魅力惠（上海）贸易有限公司版权所有</span>沪ICP备10004993号
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/header.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/register.js" type="text/javascript" charset="utf-8"></script>
+	
+</html>

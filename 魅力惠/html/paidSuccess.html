@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单成功</title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<style type="text/css">
+			.mainpart{
+				width:1000px;
+				height:360px;
+				margin:0 auto;
+				padding-top:40px;
+			}
+			.mainbox{
+				width:700px;
+				height:300px;
+				border:1px solid #000;
+				margin:0px auto;
+			}
+			.alipaylogo{
+				height:77px;
+				width:100%;
+				border-bottom:1px solid #D9D9D9;
+				background:url(../img/alipaylogo2.png) no-repeat left top;
+			}
+			.tradelogo{
+				height:69px;
+				width:100%;
+				background:url(../img/tradeSucceed.png) no-repeat left top;
+			}
+			.tradeRecord{
+				width:680px;
+				height:120px;
+				border:1px solid #D9D9D9;
+				margin-left:10px;
+				background:#EDFFCD;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="clearfix"></div>
+		<!--*************main start*********************-->
+		<div class="mainpart">
+			<div class="mainbox">
+				<div class="alipaylogo"></div>
+				<div class="tradelogo"></div>
+				<div class="tradeRecord">
+					<img src="../img/duigou.png"  />
+					<span>您已成功付款<b class="totalprice">200</b>元！</span>
+				</div>
+			</div>
+		</div>
+		<!--*************main end***********************-->
+		<div class="clearfix"></div>
+		<div id="footer"></div>
+	</body>
+	<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/myAccountCommon.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".totalprice").html(getCookie("isTotalPrice"));
+	</script>
+</html>
